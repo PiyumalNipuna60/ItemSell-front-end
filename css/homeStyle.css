@@ -45,8 +45,48 @@ section {
 
 .nav {
     padding-top: 34px;
+    padding-right: 20%;
     padding-bottom: 24px;
+    background-image: linear-gradient(
+            to right,
+            var(--bg-black-700),
+            var(--bg-black-500) 50%,
+            #000 50%
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+
 }
+
+.nav:hover {
+    padding-top: 32px;
+    padding-bottom: 21px;
+    font-size: 107%;
+    background-position: 0;
+    cursor: pointer;
+
+}
+
+.nav:hover::before {
+    text-decoration: wavy underline;
+    width: 100%;
+}
+
+.nav:before {
+    content: '';
+    background: #54b3d6;
+    display: block;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
 
 .navbar-center {
     position: absolute;
@@ -58,12 +98,39 @@ section {
 }
 
 .navbar-center h1 {
-    font-family: 'Inknut Antiqua',serif;
+    font-family: 'Inknut Antiqua', serif;
     font-size: xx-large;
     font-weight: bold;
     display: flex;
+
+    color: inherit;
+    text-decoration: none;
 }
-.navbar-center h1 div{
+
+.navbar-center h1 {
+    background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0),
+            rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(
+            to right,
+            rgba(255, 0, 0, 1),
+            rgba(255, 0, 180, 1),
+            rgba(0, 100, 200, 1)
+    );
+    background-size: 100% 3px, 0 3px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 400ms;
+}
+
+.navbar-center h1:hover {
+    background-size: 0 3px, 100% 3px;
+    cursor: pointer;
+}
+
+.navbar-center h1 div {
     width: 8px;
     height: 8px;
     background: var(--bg-black-500);
@@ -112,7 +179,6 @@ section {
 
 /*-----------------------------------------------------*/
 .content article {
-    background-color: yellow;
     width: 60%;
     height: 50%;
     position: absolute;
@@ -122,24 +188,29 @@ section {
 
 
 .content .content-right {
-    padding-top: 2%;
     position: absolute;
     right: 0;
     margin: auto;
 }
 
 
+.content .content-right img {
+    width: 53vw;
+    height: auto;
+}
 
+
+/*--------------------------------*/
 .content .art-1,
 .content .art-2,
 .content .art-3,
-.content .art-4{
+.content .art-4 {
     padding-bottom: 1%;
     display: flex;
 }
 
-.content  .art-1 h1{
-    font-family: 'Inknut Antiqua',sans-serif;
+.content .art-1 h1 {
+    font-family: 'Inknut Antiqua', sans-serif;
     font-size: 150%;
     color: var(--bg-black-700);
 }
@@ -161,16 +232,92 @@ section {
     font-weight: bold;
 }
 
-.content  .art-3 h3{
-    font-family: 'Inknut Antiqua',sans-serif;
+.content .art-3 h3 {
+    font-family: 'Inknut Antiqua', sans-serif;
     font-size: 400%;
     font-weight: bold;
 }
 
-.content  .art-4 h1{
-    font-family: 'Inknut Antiqua',sans-serif;
+.content .art-4 h1 {
+    font-family: 'Inknut Antiqua', sans-serif;
     font-size: 150%;
 }
+
+.content .art-5 button {
+    background-color: var(--bg-black-500);
+    width: 15%;
+    height: 10%;
+    color: white;
+    font-weight: lighter;
+    font-weight: bold;
+    font-size: large;
+    /*font-family: Roboto;*/
+    border: 2px solid var(--bg-black-500);
+    border-radius: 20px;
+}
+
+.content .art-5 button:active {
+    box-shadow: 0 5px 0 #006599;
+    transform: translateY(5px);
+}
+
+
+/*-------------------------------------*/
+.home .ellipse {
+    position: absolute;
+    top: 25%;
+    left: -1%;
+}
+
+.home .hart {
+    position: absolute;
+    top: 43%;
+    left: 23%;
+    transition: transform 250ms;
+}
+
+.home .hart:hover {
+    /*transform: translatex(-15px);*/
+    animation: slide 2s both;
+}
+
+.home .hart {
+    animation: slide 2s both;
+}
+
+
+.home .like {
+    position: absolute;
+    top: 73%;
+    left: 53%;
+    transition: transform 250ms;
+}
+
+.home .like:hover {
+    /*transform: translateY(-15px);*/
+    animation: slide 2s linear;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-25px);
+    }
+    50% {
+        transform: translateY(0px);
+    }
+    75% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+/*-----------------------------------*/
 
 
 .item-title,
