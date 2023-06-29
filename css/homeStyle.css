@@ -1,14 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
 :root {
-    --bg-black-900: #40514E;
-    --bg-black-700: #11999E;
-    --bg-black-500: #30E3CA;
-    --bg-black-500: #E4F9F5;
+    --bg-black-900: #06283D;
+    --bg-black-700: #256D85;
+    --bg-black-500: #47B5FF;
+    --bg-black-300: #DFF6FF;
 
 }
 
-body{
+body {
     margin: 0;
-    overflow-x:hidden ;
+    overflow-x: hidden;
+    padding-left: 3%;
+    padding-right: 3%;
 }
 
 * {
@@ -23,26 +27,64 @@ section {
     /*background: var(--bg-black-900);*/
     min-height: 100vh;
     display: block;
-
     opacity: 1;
 }
 
-.navbar{
+.line {
     display: flex;
-    justify-content: end;
-    text-indent: 5rem;
     border-bottom: 3px solid var(--bg-black-500);
 }
 
-.nav{
-    padding-right: 1%;
-    padding-top: 24px;
+.navbar-start {
+    display: flex;
+    justify-content: start;
+    text-indent: 3rem;
+    font-weight: bold;
+
+}
+
+.nav {
+    padding-top: 34px;
     padding-bottom: 24px;
+}
+
+.navbar-center {
+    position: absolute;
+    left: 48%;
+    margin: auto;
+    padding-top: 25px;
+    padding-bottom: 24px;
+}
+
+.navbar-center h1 {
+    font-family: 'Inknut Antiqua',serif;
+    font-size: xx-large;
+    font-weight: bold;
+    display: flex;
+}
+.navbar-center h1 div{
+    width: 8px;
+    height: 8px;
+    background: var(--bg-black-500);
+    position: absolute;
+    bottom: 33%;
+    right: -7%;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.navbar-end{
+    position: absolute;
+    right: 0;
+    margin: auto;
+    padding-top: 30px;
+    padding-bottom: 24px;
+    padding-right: 3%;
 }
 
 .item-title,
 .contact-title,
-.about-title{
+.about-title {
     justify-content: center;
     font-size: 3rem;
     text-align: center;
@@ -55,8 +97,8 @@ section {
 
 .contact-title hr,
 .item-title hr,
-.about-title hr{
-    border: var(--bg-black-700);
+.about-title hr {
+    border: var(--bg-black-900);
     background-color: var(--bg-black-700);
     width: 10rem;
     height: 5px;
