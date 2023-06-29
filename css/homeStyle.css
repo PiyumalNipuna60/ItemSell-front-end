@@ -54,6 +54,7 @@ section {
     margin: auto;
     padding-top: 25px;
     padding-bottom: 24px;
+
 }
 
 .navbar-center h1 {
@@ -73,14 +74,104 @@ section {
     margin: auto;
 }
 
-.navbar-end{
+.navbar-end {
+    position: absolute;
+    right: 3%;
+    justify-items: center;
+    margin-top: 1.2%;
+    width: 12%;
+    height: 4%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    display: flex;
+
+}
+
+.navbar-end .d-left {
+    justify-items: center;
+    align-items: center;
+    margin-left: 4%;
+    display: flex;
+}
+
+.navbar-end .d-left input {
+    width: 70%;
+    height: 80%;
+    border: white;
+    margin-left: 8%;
+    font-weight: bold;
+    border-right: 2px solid var(--bg-black-700);
+}
+
+.navbar-end .d-right {
+    justify-items: center;
+    align-items: center;
+    margin-right: 4%;
+    display: flex;
+}
+
+/*-----------------------------------------------------*/
+.content article {
+    background-color: yellow;
+    width: 60%;
+    height: 50%;
+    position: absolute;
+    top: 35%;
+    margin: auto;
+}
+
+
+.content .content-right {
+    padding-top: 2%;
     position: absolute;
     right: 0;
     margin: auto;
-    padding-top: 30px;
-    padding-bottom: 24px;
-    padding-right: 3%;
 }
+
+
+
+.content .art-1,
+.content .art-2,
+.content .art-3,
+.content .art-4{
+    padding-bottom: 1%;
+    display: flex;
+}
+
+.content  .art-1 h1{
+    font-family: 'Inknut Antiqua',sans-serif;
+    font-size: 150%;
+    color: var(--bg-black-700);
+}
+
+.content  .art-1 hr{
+    border: 1px solid var(--bg-black-700);
+    width: 40%;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin:  auto auto auto 10px;
+}
+
+
+
+.content  .art-2 h2{
+    font-family: 'Inknut Antiqua',sans-serif;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+.content  .art-3 h3{
+    font-family: 'Inknut Antiqua',sans-serif;
+    font-size: 400%;
+    font-weight: bold;
+}
+
+.content  .art-4 h1{
+    font-family: 'Inknut Antiqua',sans-serif;
+    font-size: 150%;
+}
+
 
 .item-title,
 .contact-title,
