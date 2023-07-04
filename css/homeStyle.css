@@ -351,7 +351,7 @@ section {
     border-radius: 5rem;
     min-height: 20vh;
     margin-bottom: 50px;
-    padding: 3%;
+    padding: 2%;
 }
 
 .popular{
@@ -359,19 +359,51 @@ section {
 }
 
 .popular-1{
-width: 33%;
-    background-color: yellow;
+   border-right: 2px solid white;
+    padding: 1%;
+    width: 33%;
+    //background-color: yellow;
 }
 
 .popular-2{
+    border-right: 2px solid white;
     width: 33%;
-    align-items: center;
-    background-color: red;
 }
 
-.popular-3{
+.popular-3 {
     width: 33%;
-    background-color: yellow;
+    //background-color: yellow;
+}
+
+.header {
+    padding-bottom: 5%;
+    color: white;
+    font-size: xx-large;
+}
+
+.popular-2>div {
+
+    margin: auto;
+    text-align: center;
+}
+
+.popular-3>div {
+
+    margin: auto;
+    text-align: center;
+}
+
+.popular-3 .title {
+    padding-right: 5%;
+    color: white;
+    font-size:x-large;
+}
+
+.title {
+    padding-right: 5%;
+    color: white;
+    font-size:1.5rem;
+    font-weight: bold;
 }
 
 
