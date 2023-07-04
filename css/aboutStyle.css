@@ -1,0 +1,28 @@
+.about{
+    background-color: yellow;
+
+}
+
+.about>div{
+    background-color: aqua;
+    padding-top: 15%;
+    padding-bottom: 15%;
+    display: flex;
+}
+
+.about-right{
+    background-color: red;
+    height: 56vh;
+
+}
+
+.about1-content-1>h1{
+    font-size: 8rem;
+    font-weight: bold;
+    font-family: monospace;
+    margin-top: -10%;
+    padding-left: 5%;
+    color: #000;
+    opacity: 0.2;
+}
+
