@@ -8,11 +8,18 @@
 
 }
 
+html{
+    scroll-padding-top: 5.5rem;
+    scroll-behavior: smooth;
+}
+
+
+
 body {
     margin: 0;
     overflow-x: hidden;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 13%;
+    padding-right: 13%;
 }
 
 * {
@@ -33,6 +40,10 @@ section {
 .line {
     display: flex;
     border-bottom: 3px solid var(--bg-black-500);
+}
+
+.home{
+
 }
 
 .navbar-start {
@@ -141,9 +152,21 @@ section {
     margin: auto;
 }
 
+.navbar-center h1>div:nth-child(1) {
+    width: 8px;
+    height: 8px;
+    background: var(--bg-black-500);
+    position: absolute;
+    bottom: 33%;
+    /* right: -7%; */
+    left: -120%;
+    border-radius: 50%;
+    margin: auto;
+}
+
 .navbar-end {
     position: absolute;
-    right: 3%;
+    right: 13%;
     justify-items: center;
     margin-top: 1.2%;
     width: 12%;
@@ -250,11 +273,17 @@ section {
     color: white;
     font-weight: lighter;
     font-weight: bold;
+    font-size: 10%;
     font-size: large;
+    margin-top:5%;
     /*font-family: Roboto;*/
     border: 2px solid var(--bg-black-500);
-    border-radius: 20px;
+    border-radius: 20rem;
 }
+.content .art-5 button:hover {
+    cursor: pointer;
+}
+
 
 .content .art-5 button:active {
     box-shadow: 0 5px 0 #006599;
@@ -266,13 +295,13 @@ section {
 .home .ellipse {
     position: absolute;
     top: 25%;
-    left: -1%;
+    left: 8%;
 }
 
 .home .hart {
     position: absolute;
     top: 43%;
-    left: 23%;
+    left: 40rem;
     transition: transform 250ms;
 }
 
@@ -314,6 +343,35 @@ section {
     100% {
         transform: translateY(0px);
     }
+}
+
+/*<!----------------------popular aria------------------------>*/
+#popular{
+    background-color: var(--bg-black-500);
+    border-radius: 5rem;
+    min-height: 20vh;
+    margin-bottom: 50px;
+    padding: 3%;
+}
+
+.popular{
+    display: flex;
+}
+
+.popular-1{
+width: 33%;
+    background-color: yellow;
+}
+
+.popular-2{
+    width: 33%;
+    align-items: center;
+    background-color: red;
+}
+
+.popular-3{
+    width: 33%;
+    background-color: yellow;
 }
 
 

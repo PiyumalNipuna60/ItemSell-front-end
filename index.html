@@ -6,24 +6,33 @@
     <title>Kt_products</title>
     <link rel="stylesheet" href="css/homeStyle.css">
 
+    <!-------------------------AOS----------------------->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
 
 <!------------home section start----------->
 <Section class="home">
     <div class="line">
-        <div class="navbar-start">
-            <nav class="nav">Home</nav>
-            <nav class="nav">About</nav>
-            <nav class="nav">Product</nav>
-            <nav class="nav">Contact</nav>
+        <div class="navbar-start" >
+            <nav class="nav" data-aos="fade-down" data-aos-duration="800">Home</nav>
+            <nav class="nav" data-aos="fade-down" data-aos-duration="1000">About</nav>
+            <nav class="nav" data-aos="fade-down" data-aos-duration="1200">Product</nav>
+            <nav class="nav" data-aos="fade-down" data-aos-duration="1500">Contact</nav>
         </div>
 
-        <div class="navbar-center">
-            <h1>KT Products <div> </div></h1>
+        <div class="navbar-center" data-aos="zoom-out" data-aos-duration="1500">
+            <h1> <div class="dot"> </div>KT Products <div class="dot"> </div></h1>
         </div>
 
-        <div class="navbar-end">
+        <div class="navbar-end"  data-aos="fade-left"
+             data-aos-anchor="#example-anchor"
+             data-aos-offset="500"
+             data-aos-duration="1500">
             <div class="d-left">
                 <div class="sch-icon">
                     <img src="assets/serch.png" alt="search-icon">
@@ -41,38 +50,81 @@
     <div class="content">
         <article>
             <div class="art-1">
-                <h1>Trendy Collection’s</h1>
-                <hr>
+                <h1 data-aos="fade-left"  data-aos-offset="500"
+                    data-aos-duration="1500">Trendy Collection’s</h1>
+                <hr data-aos="flip-left" data-aos-offset="500" data-aos-duration="1800">
             </div>
             <div class="art-2">
-                <h2>All Your Needs from a</h2>
+                <h2 data-aos="zoom-in-up" data-aos-offset="500" data-aos-duration="1500">All Your Needs from a</h2>
             </div>
             <div class="art-3">
-                <h3>ONE PLACE</h3>
+                <h3 data-aos="zoom-in-up" data-aos-offset="500" data-aos-duration="1500">ONE PLACE</h3>
             </div>
             <div class="art-4">
-                <h1>Give your life the stylish decoration and deserve at affordable price .</h1>
+                <h1 data-aos="zoom-in-up" data-aos-offset="" data-aos-duration="1500">Give your life the stylish decoration and deserve at affordable price .</h1>
             </div>
             <div class="art-5">
-                <button>Start Shopping</button>
+                <button data-aos="fade-right"
+                        data-aos-offset="300"
+                        data-aos-offset="500"
+                        data-aos-duration="1500"
+                        data-aos-easing="ease-in-sine">Start Shopping</button>
             </div>
         </article>
-        <div class="content-right">
-            <img src="assets/Image.png" alt="image">
+        <div class="content-right" >
+            <img src="assets/Image.png" alt="image" data-aos="flip-right" data-aos-duration="1500">
         </div>
     </div>
 
-    <div class="ellipse">
+    <div class="ellipse" data-aos="flip-left"
+         data-aos-easing="ease-out-cubic"
+         data-aos-duration="1200">
         <img src="assets/Ellipse 2.png" alt="ellipse">
     </div>
-    <div class="hart">
-        <img src="assets/love 1.png" alt="hart">
+    <div class="hart" >
+        <img src="assets/love 1.png" alt="hart"  data-aos="zoom-in" data-aos-offset="500" data-aos-duration="1500">
     </div>
-    <div class="like">
+    <div class="like" >
         <img src="assets/like 1.png" alt="like">
     </div>
+
+
+
+
 </Section>
 <!------------home section End------------->
+
+
+<!-----------------popular aria------------------->
+<section id="popular">
+    <div class="popular">
+        <div class="popular-1">
+            <div class="header">
+                <h1>Most Popular</h1>
+            </div>
+            <div class="title">
+                <p>Shop the latest trendy fashion outfit at Ecstoy.</p>
+            </div>
+        </div>
+        <div class="popular-2">
+            <div class="img">
+                <img src="assets/dream 1.png">
+            </div>
+            <div class="title">
+                <h1>Dream Catcher</h1>
+            </div>
+        </div>
+        <div class="popular-3">
+            <div class="img">
+                <img src="assets/price-tag 1.png">
+            </div>
+            <div class="title">
+                <h1>Creative Key Tag</h1>
+            </div>
+        </div>
+    </div>
+</section>
+<!-----------------popular aria--------------------->
 
 
 <!------------About section start---------->
@@ -117,6 +169,12 @@
 </Section>
 <!-----------Contact section End---------->
 
+<!-------------------------------------AOS---------------------------------->
 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 </body>
 </html>
